@@ -1,0 +1,5 @@
+https://jsd.cdn.zzko.cn/gh/yxing-xyz/data@main/linux-amd64/tsz
+https://jsd.cdn.zzko.cn/gh/yxing-xyz/data@main/linux-amd64/trz
+
+https://jsd.cdn.zzko.cn/gh/yxing-xyz/data@main/linux-arm64/tsz
+https://jsd.cdn.zzko.cn/gh/yxing-xyz/data@main/linux-arm64/trz
