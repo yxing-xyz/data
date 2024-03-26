@@ -1,5 +1,6 @@
 #!/bin/bash
 read -d '' content <<EOF
+$(date)
 README:
 https://raw.githubusercontent.com/yxing-xyz/data/main/README.md
 
@@ -9,7 +10,7 @@ EOF
 echo "$content" >./url.txt
 echo >>./url.txt
 tee >>./url.txt <<EOF
-docker run -dit --name dev --hostname dev --restart always --privileged \\
+docker run -dit --name dev --hostname dev --restart always --privileged --pull always \\
     --platform linux/amd64 -p 2222:22 \\
     -v /data:/data \\
     ccr.ccs.tencentyun.com/yxing-xyz/linux:ubuntu-devel

@@ -1,10 +1,11 @@
+Tue Mar 26 10:01:07 UTC 2024
 README:
 https://raw.githubusercontent.com/yxing-xyz/data/main/README.md
 
 userdata:
 https://raw.githubusercontent.com/yxing-xyz/data/main/userdata.7z
 
-docker run -dit --name dev --hostname dev --restart always --privileged \
+docker run -dit --name dev --hostname dev --restart always --privileged --pull always \
     --platform linux/amd64 -p 2222:22 \
     -v /data:/data \
     ccr.ccs.tencentyun.com/yxing-xyz/linux:ubuntu-devel
